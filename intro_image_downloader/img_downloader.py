@@ -28,19 +28,27 @@ def main(argv=None):
         # MAIN APP
         # --------------
         print parser.version
+        # Check parameters
+        if not opts.url:
+            print "URL missing"
+            return
+        if not opts.dst:
+            print "Target path missing"
+            return        
+            
         ei = ExtractImages(opts.url)
         ei.get_image_urls()
         ei.download_images_from_url(None, opts.dst)       
         print "--- done ---"            
                           
     except Exception, ex:
-        print repr(ex)
-        return 2
-
+        # rethrow exception to show stack trace
+        raise
+    
 if __name__ == "__main__":
     # sample call: python img_downloader.py -u http://www.pixomondo.com/wp/?page_id=43 -d c:\temp\e
     argv = sys.argv[1:]
     if False:
         # needs to be a list as it would come in as a list from the command line as parameters
-        argv = ["-u","http://www.pixomondo.com/wp/?page_id=43","-d",r"c:\temp\img"]
+        argv = ["-u", "http://www.pixomondo.com/wp/?page_id=43", "-d", r"c:\temp\img"]
     sys.exit(main(argv))

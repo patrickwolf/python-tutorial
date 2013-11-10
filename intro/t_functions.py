@@ -6,9 +6,9 @@
 # functions 
 # ---------------------------
 
-def proc1(aint):
+def func1(aint):
     """ docstring """
-    return # return nothing (the same as return None)
+    return  # return nothing (the same as return None)
 
 # ---------------------------
 def add(aint, bint=0, cint=None):
@@ -31,11 +31,11 @@ def multiadd(*args):
     """ adds unlimited numbers together """
     result = 0
     for a in args:
-        result += a
+        result += a 
     return result
 
 
 print "\n--- multi add ---"
 print multiadd.__doc__
-print multiadd (5,3,1,2341,543,12)
+print multiadd (5, 3, 1, 2341, 543, 12)
 # ---------------------------

@@ -12,9 +12,9 @@ line2
 """
 
 # docstring to comment functions / classes etc. Will be used by intellisense / debugger etc.
-def function():
-    """ this function does a lot """
-    pass # this means don't do anything
+def my_function():
+    """ this function does a lot 12334"""
+    pass  # this means don't do anything
 
 # ----------------------
 # Indentation
