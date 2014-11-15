@@ -14,8 +14,7 @@ foo = _foo = __foo = foo_bar = foo3 = None
 # ---------------------------
 # scoping
 # ---------------------------
-# Python doesn't differentiate between private, protected, public
-# convention
+# Python doesn't differentiate between private, protected, public but there is a convention
 
 class SampleClass():
     def __init__(self):
@@ -23,12 +22,15 @@ class SampleClass():
         self._protectedvar = None
         self.__privatevar = None
 
-    def publicfunc():
+    def public_function(self):
         pass
         
-    def _protectedfunc():
+    def _protected_function(self):
         pass
     
+    def __pricate_function(self):
+        pass
+
 
 # ---------------------------
 # keywords
