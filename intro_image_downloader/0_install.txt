@@ -1,0 +1,20 @@
+--- DOWNLOAD PACKAGE MANAGER ---
+: https://bootstrap.pypa.io/get-pip.py
+
+--- INSTALL PACKAGE MANAGER (DOS SHELL) ---
+>SET PATH=%PATH%;C:\Python27x64;C:\Python27x64\Scripts
+>python.exe get-pip.py
+Downloading/unpacking pip
+Downloading/unpacking setuptools
+Installing collected packages: pip, setuptools
+Successfully installed pip setuptools
+Cleaning up...
+
+--- INSTALL VIRTUAL ENVIRONMENTS PACKAGE ---
+>pip.exe install virtualenv
+Downloading/unpacking virtualenv
+Installing collected packages: virtualenv
+Successfully installed virtualenv
+Cleaning up...
+
+--- DONE ---

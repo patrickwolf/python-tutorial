@@ -1,0 +1,32 @@
+--- CREATE VIRTUAL ENVIRONMENT ---
+SET PATH=%PATH%;C:\Python27x64;C:\Python27x64\Scripts
+>mkdir C:\Python27x64\venv
+>cd C:\Python27x64\venv
+
+>virtualenv vdev
+New python executable in vdev\Scripts\python.exe
+Installing setuptools, pip...done.
+
+
+
+--- ACTIVATE AND USE VIRTUAL ENVIRONMENT ---
+\venv>vdev\Scripts\activate
+
+
+
+--- INSTALL PACKAGE INTO VIRTUAL ENVIRONMENT ---
+(vdev) \venv>pip install beautifulsoup4
+Downloading/unpacking beautifulsoup4
+  Downloading BeautifulSoup-3.2.1.tar.gz
+  Running setup.py (path:\venv\vdev\build\beautifulsoup\setup.py) egg_info for package beautifulsoup
+
+Installing collected packages: beautifulsoup
+  Running setup.py install for beautifulsoup
+
+Successfully installed beautifulsoup
+Cleaning up...
+
+
+
+--- DEACTIVATE VIRTUAL ENVIRONMENT ---
+> deactivate

@@ -35,22 +35,22 @@ class Test(unittest.TestCase):
 
         ei = ExtractImages("http://www.test.com/?q=test")
         urls = ei.get_image_urls(html)
-        self.assertItemsEqual(urls,correct_urls)
+        self.assertItemsEqual(urls, correct_urls)
 
     def test_download_url(self):
         # get url to dummy.jpg
         pn = os.path.dirname(__file__)
-        fpn = os.path.join(pn,"dummy.png")
-        url = "file:///"+ fpn.replace("\\","/").replace(":","|")
+        fpn = os.path.join(pn, "dummy.png")
+        url = "file:///" + fpn.replace("\\", "/").replace(":", "|")
         # get target path
-        target_fpn = os.path.join(pn,"dummy_1.png")
+        target_fpn = os.path.join(pn, "dummy_1.png")
     
         ei = ExtractImages("http://www.test.com/?q=test")
-        ei.download_image_from_url(url, pn )
+        ei.download_image_from_url(url, pn)
         # test file was correctly downloaded
         self.assertTrue(os.path.exists(target_fpn), "target file missing")
         self.assertEqual(os.path.getsize(fpn), os.path.getsize(target_fpn), "file size mismatch")
-        #cleanup 
+        # cleanup 
         os.remove(target_fpn)
         
 if __name__ == "__main__":

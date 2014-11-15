@@ -9,7 +9,7 @@
 print "\n--- numbers ---"
 aint = 5
 bint = aint
-print "%s,%s | id %s,%s" % (aint, bint, id(aint), id(bint))  # result 6  -  5
+print "%s,%s | id %s,%s" % (aint, bint, id(aint), id(bint))  # result 5  -  5
 aint = 6
 print "%s,%s | id %s,%s" % (aint, bint, id(aint), id(bint))  # result 6  -  5
 

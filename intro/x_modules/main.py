@@ -1,7 +1,7 @@
 '''
 @summary: Python Intro - Modules
 namespace, reuse
-pkg_tools is a package which is compare able to a self contained library with its own name space
+pkg_tools is a package which is compareable to a self contained library with its own name space
 '''
 from pprint import pprint
 
@@ -14,7 +14,7 @@ import sys
 pprint (sys.path)
 
 import os
-# this path is always added to the sys.path search list
+# this path is always adds to the sys.path search list
 print os.environ["PYTHONPATH"]
 
 # ---------------------------
@@ -34,7 +34,7 @@ logwarn("alias imported logwarn")
 # different ways to import a package into the namespace
 # ---------------------------
 print "\n--- namespace packages ---"
-lst = [1,2,3,1,2,3,4]
+lst = [1, 2, 3, 1, 2, 3, 4]
 import pkg_tools.mod_lists
 print pkg_tools.mod_lists.get_unique_list(lst)
 
@@ -48,5 +48,6 @@ from pkg_tools.mod_lists import get_unique_list as getunique
 print getunique(lst)
 
 
+# Only exectued when this is the startup script
 if __name__ == '__main__':
     pass

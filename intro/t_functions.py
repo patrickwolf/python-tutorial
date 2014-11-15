@@ -21,6 +21,7 @@ def add(aint, bint=0, cint=None):
 print "\n--- add ---"
 print add.__doc__
 print add(4)
+print add(4, 2, 5)
 print add(3, bint=1, cint=15)
 print add(10, cint=25)
 # ---------------------------

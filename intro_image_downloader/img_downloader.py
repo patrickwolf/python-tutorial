@@ -48,7 +48,11 @@ def main(argv=None):
 if __name__ == "__main__":
     # sample call: python img_downloader.py -u http://www.pixomondo.com/wp/?page_id=43 -d c:\temp\e
     argv = sys.argv[1:]
-    if False:
+    if not argv:
+        print "no args provided. doing testing"
         # needs to be a list as it would come in as a list from the command line as parameters
         argv = ["-u", "http://www.pixomondo.com/wp/?page_id=43", "-d", r"c:\temp\img"]
+        argv = ["-u", "http://www.picsearch.com/index.cgi?q=movies", "-d", r"c:\temp\img"]
+        argv = ["-u", "http://www.flickr.com/search/?q=mountains", "-d", r"c:\temp\img"]
+
     sys.exit(main(argv))
