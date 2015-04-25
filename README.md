@@ -1,4 +1,5 @@
 python-tutorials
 ===============
 
-intro is from "Getting started with Python" - Presented at Code Camp San Diego, USA in July 2013
+Intro is from "Intro to Development with Python" - Presented at Code District LA, April 2015
+http://www.meetup.com/code-district/events/221345836/
