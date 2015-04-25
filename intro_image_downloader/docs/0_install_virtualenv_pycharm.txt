@@ -1,0 +1,11 @@
+Install VirtualEnv PyCharm
+--------------------------
+
+File>Settings>Project>Interpreter
+Select "Create Virtual Env" on the right
+Set path to: C:\Python27\venv
+Name it: beautifulsoup
+Select: Inherit Global
+Choose "BeautifulSoup4" to install
+
+--- DONE ---
