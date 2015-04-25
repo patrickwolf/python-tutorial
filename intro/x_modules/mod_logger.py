@@ -5,4 +5,5 @@ def log_warning(msg):
     print "%s, '%s'" % (now, msg)
 
 if __name__ == '__main__':
+    print "#########################################"
     log_warning("test now")

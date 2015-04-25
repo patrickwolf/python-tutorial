@@ -10,6 +10,10 @@ def func1(aint):
     """ docstring """
     return  # return nothing (the same as return None)
 
+def func2():
+    """ docstring """
+    pass    # python requires that something is inside the function pass does nothing and satisfies the requirement
+
 # ---------------------------
 def add(aint, bint=0, cint=None):
     """ add up to three numbers together """
