@@ -15,4 +15,5 @@ for dir_name, sub_dirs, files in os.walk(root):
     for f in files:
         print os.path.join(dir_name, f)
 
-# Exercise only print out subfolders and not files
+# Exercise #1 print out sub folders instead of files
+# Exercise #2 use tab \t to print out a directory tree
