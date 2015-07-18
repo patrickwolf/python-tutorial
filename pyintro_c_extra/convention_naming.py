@@ -1,9 +1,15 @@
-'''
-@summary: Python Intro - Naming rules 
-'''
-# ---------------------------
-# naming rules
-# ---------------------------
+#!/usr/bin/env python
+#-*- coding: utf-8 -*-
+
+"""
+@summary: Python Intro - Naming rules
+
+References:
+Python docstring styles:
+http://stackoverflow.com/a/24385103/91799
+Google style guide
+http://google-styleguide.googlecode.com/svn/trunk/pyguide.html#Comments
+"""
 
 # Python is case sensitive
 # Variables can't start with a number
