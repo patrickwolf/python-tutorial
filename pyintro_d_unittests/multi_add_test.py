@@ -5,7 +5,7 @@ import multi_add as f
 
 class MultiAddTestCase(unittest.TestCase):
 
-   def test_add(self):
+    def test_add(self):
         result = f.add(5)
         self.assertEqual(result, 5)
         self.assertEqual(f.add(5, 10), 15)
